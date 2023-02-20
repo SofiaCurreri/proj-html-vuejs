@@ -15,12 +15,54 @@ body {
   font-family: "PT Sans Caption", sans-serif;
 }
 
+.btn {
+  border-radius: 0px !important;
+}
+
+.btn.explore {
+  color: #ffffff;
+  background-color: var(--details-and-bg-footer);
+}
+
+.btn.quote {
+  background-color: var(--bg-1-details);
+}
+
 /* HEADER */
 header {
   height: 15vh;
 }
 
 /* MAIN */
+
+.decoration {
+  height: 2px;
+  width: 10vw;
+  background-color: var(--bg-1-details);
+}
+
+.round-icon {
+  border: 1px solid grey;
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  color: grey;
+
+  position: relative;
+}
+
+.round-icon i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card {
+  background-color: var(--bg-2-section);
+  border-color: transparent !important;
+  border-radius: 15px !important;
+}
 
 /* Jumbotron */
 #jumbotron {
@@ -43,17 +85,27 @@ h1 {
   color: var(--bg-1-details);
 }
 
-#jumbotron .btn {
-  border-radius: 0px !important;
-}
-
-#jumbotron .btn.explore {
-  color: #ffffff;
-  background-color: var(--details-and-bg-footer);
-}
-
-#jumbotron .btn.quote {
+/* Jumbo-thumb */
+#jumbo-thumb {
+  height: 15vh;
   background-color: var(--bg-1-details);
+  position: relative;
+}
+
+#jumbo-thumb .btn.explore {
+  border: 3px solid white;
+
+  position: absolute;
+  bottom: -2rem;
+}
+
+/* Specialists */
+#specialists {
+  margin-top: 10rem;
+}
+
+#cards {
+  width: 100%;
 }
 
 /* FOOTER */
