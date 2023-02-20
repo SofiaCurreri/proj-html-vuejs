@@ -15,16 +15,27 @@ body {
   font-family: "PT Sans Caption", sans-serif;
 }
 
+body p {
+  color: rgb(109, 108, 108);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--details-and-bg-footer);
+}
+
 .btn {
   border-radius: 0px !important;
 }
 
-.btn.explore {
+.btn.secondary {
   color: #ffffff;
   background-color: var(--details-and-bg-footer);
 }
 
-.btn.quote {
+.btn.primary {
   background-color: var(--bg-1-details);
 }
 
@@ -62,12 +73,13 @@ header {
   background-color: var(--bg-2-section);
   border-color: transparent !important;
   border-radius: 15px !important;
+  width: calc(100% / 4 - 60px) !important;
 }
 
 /* Jumbotron */
 #jumbotron {
   height: 85vh;
-  background-image: url(../img/home-slider.jpg);
+  background-image: url("../img/home-slider.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -76,7 +88,7 @@ header {
   height: 100%;
 }
 
-h1 {
+#jumbotron h1 {
   color: var(--bg-1-section);
   font-size: 5rem;
 }
@@ -92,7 +104,7 @@ h1 {
   position: relative;
 }
 
-#jumbo-thumb .btn.explore {
+#jumbo-thumb .btn.secondary {
   border: 3px solid white;
 
   position: absolute;
@@ -106,6 +118,22 @@ h1 {
 
 #cards {
   width: 100%;
+}
+
+/* Data */
+#data {
+  height: 80vh;
+  background-image: url("../img/home.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#data img {
+  width: 100%;
+}
+
+#data .container {
+  height: 100%;
 }
 
 /* FOOTER */
