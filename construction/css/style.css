@@ -76,6 +76,19 @@ header {
   width: calc(100% / 4 - 60px) !important;
 }
 
+.view {
+  margin-top: 100px;
+}
+
+.view:before,
+.view:after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 30vw;
+  background-color: var(--bg-2-section);
+}
+
 /* Jumbotron */
 #jumbotron {
   height: 85vh;
