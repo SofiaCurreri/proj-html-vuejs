@@ -132,8 +132,19 @@ header {
   width: 100%;
 }
 
-#data .container {
-  height: 100%;
+#data i,
+#data h2 {
+  color: var(--bg-1-details);
+  font-size: 5rem;
+}
+
+#data h4 {
+  color: var(--bg-1-section);
+}
+
+/* Explore */
+#explore .col img {
+  width: 100%;
 }
 
 /* FOOTER */
