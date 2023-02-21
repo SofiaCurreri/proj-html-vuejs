@@ -15,7 +15,8 @@ body {
   font-family: "PT Sans Caption", sans-serif;
 }
 
-body p {
+body p,
+#news figcaption {
   color: rgb(109, 108, 108);
 }
 
@@ -89,7 +90,17 @@ header {
   display: block;
   height: 3px;
   width: 30vw;
+}
+
+#explore .view:before,
+#explore .view:after {
   background-color: var(--bg-2-section);
+}
+
+#news .view:before,
+#news .view:after {
+  background-color: var(--bg-1-section);
+  width: 20vw;
 }
 
 /* Jumbotron */
@@ -235,11 +246,19 @@ header {
   background-color: var(--bg-1-section);
   border-color: transparent !important;
   border-radius: 0 !important;
-  width: calc(100% / 3 - 10px) !important;
+  width: calc(100% / 3 - 20px) !important;
 }
 
 #news .card img {
   width: 100%;
+}
+
+#news figcaption {
+  font-size: 0.8rem;
+}
+
+#news hr {
+  color: rgb(109, 108, 108);
 }
 
 /* FOOTER */
