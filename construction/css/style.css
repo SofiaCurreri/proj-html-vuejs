@@ -180,18 +180,30 @@ header {
 }
 
 #services.round-icon {
-  border: 1px solid var(--bg-services-icon);
   background-color: var(--bg-services-icon);
 }
 
-#values .separator {
-  height: 3px;
-  width: 20px;
-  background-color: #1f1f1f;
+#standards.round-icon {
+  background-color: var(--bg-standards-icon);
+}
 
-  /* position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); */
+#team.round-icon {
+  background-color: var(--bg-team-icon);
+}
+
+#solutions.round-icon {
+  background-color: var(--bg-solutions-icon);
+}
+
+#values .separator {
+  display: inline-block;
+  height: 3px;
+  width: 25px;
+  background-color: rgb(135, 134, 134);
+}
+
+#values .card-text,
+#specialists .card-text {
+  line-height: 2rem;
 }
 /* FOOTER */
