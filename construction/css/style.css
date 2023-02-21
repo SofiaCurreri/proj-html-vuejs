@@ -53,12 +53,7 @@ header {
 }
 
 .round-icon {
-  border: 1px solid grey;
-  height: 5rem;
-  width: 5rem;
   border-radius: 50%;
-  color: grey;
-
   position: relative;
 }
 
@@ -133,6 +128,13 @@ header {
   width: 100%;
 }
 
+#specialists .round-icon {
+  border: 1px solid grey;
+  height: 5rem;
+  width: 5rem;
+  color: grey;
+}
+
 /* Data */
 #data {
   height: 80vh;
@@ -160,4 +162,36 @@ header {
   width: 100%;
 }
 
+/* Our Core Values */
+#values {
+  background-color: var(--bg-2-section);
+  margin-top: 150px;
+}
+
+#values h2 {
+  margin-top: 100px;
+}
+
+#values .round-icon {
+  height: 9rem;
+  width: 9rem;
+  color: white;
+  font-size: 4rem;
+}
+
+#services.round-icon {
+  border: 1px solid var(--bg-services-icon);
+  background-color: var(--bg-services-icon);
+}
+
+#values .separator {
+  height: 3px;
+  width: 20px;
+  background-color: #1f1f1f;
+
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+}
 /* FOOTER */
