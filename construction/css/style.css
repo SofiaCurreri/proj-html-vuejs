@@ -39,6 +39,14 @@ h4 {
   background-color: var(--bg-1-details);
 }
 
+p,
+h1,
+h2,
+h3,
+h4 {
+  line-height: 2rem;
+}
+
 /* HEADER */
 header {
   height: 15vh;
@@ -163,12 +171,14 @@ header {
 }
 
 /* Our Core Values */
-#values {
+#values,
+#news {
   background-color: var(--bg-2-section);
   margin-top: 150px;
 }
 
-#values h2 {
+#values h2,
+#news h2 {
   margin-top: 100px;
 }
 
@@ -202,8 +212,34 @@ header {
   background-color: rgb(135, 134, 134);
 }
 
-#values .card-text,
-#specialists .card-text {
-  line-height: 2rem;
+/* Our Home */
+#home {
+  height: 85vh;
+  background-image: url("../img/home-parallax.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  position: relative;
 }
+
+#carousel {
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Latest News */
+#news .card {
+  background-color: var(--bg-1-section);
+  border-color: transparent !important;
+  border-radius: 0 !important;
+  width: calc(100% / 3 - 10px) !important;
+}
+
+#news .card img {
+  width: 100%;
+}
+
 /* FOOTER */
