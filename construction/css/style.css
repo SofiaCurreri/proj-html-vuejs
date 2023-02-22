@@ -22,6 +22,7 @@ body p,
 
 h1 {
   font-weight: 900;
+  line-height: 5rem;
 }
 
 h1,
@@ -45,7 +46,6 @@ h4 {
 }
 
 p,
-h1,
 h2,
 h3,
 h4 {
@@ -113,10 +113,40 @@ header {
   background-image: url("../img/home-slider.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+
+  position: relative;
 }
 
 #jumbotron .container {
   height: 100%;
+}
+
+.jumbo-icon {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 5px;
+  background-color: var(--bg-1-section);
+  position: absolute;
+  right: 1rem;
+}
+
+.jumbo-icon.demos {
+  top: 1.5rem;
+}
+
+.jumbo-icon.on-sale {
+  top: calc(1.5rem + 5rem + 1rem);
+}
+
+.price {
+  position: relative;
+}
+
+.dollar {
+  position: absolute;
+  top: 30%;
+  left: 20%;
+  transform: translate(-50%, -50%);
 }
 
 #jumbotron h1 {
@@ -291,3 +321,12 @@ header {
 }
 
 /* FOOTER */
+#footer-top {
+  height: 70vh;
+  background-color: var(--details-and-bg-footer);
+}
+
+#footer-bottom {
+  height: 10vh;
+  background-color: var(--bg-bottom-footer);
+}
