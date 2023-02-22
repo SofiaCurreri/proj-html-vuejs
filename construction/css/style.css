@@ -395,3 +395,7 @@ header a {
   height: 8vh;
   background-color: var(--bg-bottom-footer);
 }
+
+#footer-bottom p {
+  color: #424242;
+}
