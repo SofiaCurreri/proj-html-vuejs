@@ -42,9 +42,9 @@
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
   </head>
 
-  <body>
+  <body id="app">
     <!-- HEADER -->
-    <header id="app">
+    <header>
       <nav
         class="container-fluid d-flex justify-content-between align-items-center"
         id="app"
@@ -595,7 +595,23 @@
                 </div>
               </div>
             </div>
-            <div class="col"></div>
+
+            <!-- Third column -->
+            <div class="col">
+              <!-- Title -->
+              <h4 class="mb-5">CONTACT US TODAY</h4>
+
+              <!-- Icons and Text -->
+              <div v-for="contact in contactCol">
+                <div class="d-flex align-items-center">
+                  <i
+                    :class="contact.icon"
+                    style="color: rgb(126, 126, 126)"
+                  ></i>
+                  <p class="ms-3">{{contact.text}}</p>
+                </div>
+              </div>
+            </div>
             <div class="col"></div>
           </div>
         </div>
