@@ -44,7 +44,39 @@
 
   <body>
     <!-- HEADER -->
-    <header id="app"></header>
+    <header id="app">
+      <nav
+        class="container-fluid d-flex justify-content-between align-items-center"
+        id="app"
+      >
+        <!-- Logo -->
+        <div class="ms-5">
+          <img src="./img/construction_logo.png" alt="logo avada" />
+        </div>
+
+        <!-- Links and Button -->
+        <div class="right-nav">
+          <a href="#" v-for="link in headerLinks" class="mx-4">{{link}}</a>
+          <!-- Arrow -->
+          <!-- <div class="arrow">
+            <svg
+              data-name="Layer 1"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 1200 120"
+              preserveAspectRatio="none"
+            >
+              <path
+                d="M649.97 0L550.03 0 599.91 54.12 649.97 0z"
+                class="shape-fill"
+              ></path>
+            </svg>
+          </div> -->
+          <button class="btn primary fs-6 ms-4 me-5 px-5 py-2">
+            GET QUOTE
+          </button>
+        </div>
+      </nav>
+    </header>
 
     <!-- MAIN -->
     <main>

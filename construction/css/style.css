@@ -52,9 +52,27 @@ h4 {
   line-height: 2rem;
 }
 
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+
 /* HEADER */
 header {
   height: 15vh;
+}
+
+header .container-fluid {
+  height: 100%;
+}
+
+header img {
+  width: 18rem;
+}
+
+.right-nav :first-child {
+  color: var(--bg-1-details);
+  position: relative;
 }
 
 /* MAIN */
@@ -119,6 +137,26 @@ header {
 
 #jumbotron .container {
   height: 100%;
+}
+
+.arrow {
+  position: absolute;
+  top: 0;
+  left: 1260px;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.arrow svg {
+  position: relative;
+  display: block;
+  width: calc(20% + 1.3px);
+  height: 40px;
+}
+
+.arrow .shape-fill {
+  fill: #ffffff;
 }
 
 .jumbo-icon {
