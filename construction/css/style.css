@@ -194,7 +194,7 @@ header {
 
 #values h2,
 #news h2 {
-  margin-top: 100px;
+  margin-top: 150px;
 }
 
 #values .round-icon {
@@ -270,7 +270,8 @@ header {
   width: 80%;
 }
 
-#partners {
+#partners,
+#spaces {
   margin-top: 150px;
 }
 
