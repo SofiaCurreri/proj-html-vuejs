@@ -274,4 +274,19 @@ header {
   margin-top: 150px;
 }
 
+/* Building Inspiring Spaces  */
+#spaces {
+  height: 40vh;
+  background-image: url("../img/about-call-to-action.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+
+#spaces h2,
+#spaces h4,
+#spaces p {
+  color: var(--bg-1-section);
+}
+
 /* FOOTER */
