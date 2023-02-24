@@ -517,7 +517,7 @@
       <!-- Footer Top -->
       <section id="footer-top">
         <div class="container-fluid d-flex py-5">
-          <div class="row-cols-4 w-100 d-flex">
+          <div class="row gx-5">
             <!-- First column -->
             <div class="col">
               <!-- Logo -->
@@ -597,13 +597,13 @@
             </div>
 
             <!-- Third column -->
-            <div class="col">
+            <div class="col" id="contact-us">
               <!-- Title -->
               <h4 class="mb-5">CONTACT US TODAY</h4>
 
               <!-- Icons and Text -->
               <div v-for="contact in contactCol">
-                <div class="d-flex align-items-center">
+                <div class="d-flex align-items-center mb-4">
                   <i
                     :class="contact.icon"
                     style="color: rgb(126, 126, 126)"

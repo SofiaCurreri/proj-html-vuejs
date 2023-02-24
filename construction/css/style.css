@@ -389,6 +389,10 @@ header a {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+#contact-us p {
+  margin-bottom: 0;
+}
+
 /* Footer bottom */
 
 #footer-bottom {
